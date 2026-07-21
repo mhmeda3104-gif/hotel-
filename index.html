@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-ar="فندق ريجال بالاس | تجربة فاخرة لا تُنسى" data-en="Regal Palace Hotel | An Unforgettable Luxury Experience">فندق ريجال بالاس | تجربة فاخرة لا تُنسى</title>
+  <meta name="description" content="Regal Palace Hotel - The ultimate luxury destination. Experience extraordinary hospitality with five-star service." />
+  <meta name="keywords" content="luxury hotel, five star hotel, regal palace, hotel booking, resort" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Tajawal:wght@300;400;500;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-logo">
+        <span class="logo-icon">✦</span>
+        <span class="logo-text">REGAL PALACE</span>
+      </div>
+      <div class="preloader-tagline" data-ar="وجهة الفخامة الأولى" data-en="The Ultimate Luxury Destination">وجهة الفخامة الأولى</div>
+      <div class="preloader-bar">
+        <div class="preloader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-star">✦</span>
+        <div class="logo-group">
+          <span class="logo-main">REGAL PALACE</span>
+          <span class="logo-sub" data-ar="فندق ريجال بالاس" data-en="Luxury Hotel & Resort">فندق ريجال بالاس</span>
+        </div>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+        <li><a href="#rooms" class="nav-link" data-ar="الغرف والأجنحة" data-en="Rooms & Suites">الغرف والأجنحة</a></li>
+        <li><a href="#amenities" class="nav-link" data-ar="خدماتنا" data-en="Amenities">خدماتنا</a></li>
+        <li><a href="#dining" class="nav-link" data-ar="المطاعم" data-en="Dining">المطاعم</a></li>
+        <li><a href="#gallery" class="nav-link" data-ar="المعرض" data-en="Gallery">المعرض</a></li>
+        <li><a href="#contact" class="nav-link" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+      </ul>
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <div class="lang-switcher" id="langSwitcher">
+          <button class="lang-btn active" data-lang-btn="ar">AR</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang-btn="en">EN</button>
+        </div>
+        <a href="#booking" class="btn-book-nav" data-ar="احجز الآن" data-en="Book Now">احجز الآن</a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#home" onclick="closeMobile()" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+      <li><a href="#rooms" onclick="closeMobile()" data-ar="الغرف والأجنحة" data-en="Rooms & Suites">الغرف والأجنحة</a></li>
+      <li><a href="#amenities" onclick="closeMobile()" data-ar="خدماتنا" data-en="Amenities">خدماتنا</a></li>
+      <li><a href="#dining" onclick="closeMobile()" data-ar="المطاعم" data-en="Dining">المطاعم</a></li>
+      <li><a href="#gallery" onclick="closeMobile()" data-ar="المعرض" data-en="Gallery">المعرض</a></li>
+      <li><a href="#contact" onclick="closeMobile()" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+      <li>
+        <div class="mobile-lang-switcher">
+          <button class="lang-btn active" data-lang-btn="ar">عربي</button>
+          <span class="lang-sep">|</span>
+          <button class="lang-btn" data-lang-btn="en">English</button>
+        </div>
+      </li>
+      <li><a href="#booking" class="mobile-book-btn" onclick="closeMobile()" data-ar="احجز الآن" data-en="Book Now">احجز الآن</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-slider">
+      <div class="hero-slide active" style="background-image: url('C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_hero_1784628810981.png')"></div>
+      <div class="hero-slide" style="background-image: url('C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_pool_1784628829939.png')"></div>
+      <div class="hero-slide" style="background-image: url('C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_suite_1784628863246.png')"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span>✦</span>
+        <span data-ar="فندق خمس نجوم" data-en="Five Star Hotel">فندق خمس نجوم</span>
+        <span>✦</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="title-line" data-ar="تجربة الفخامة" data-en="The Art of">تجربة الفخامة</span>
+        <span class="title-line gold" data-ar="بلا حدود" data-en="Luxury Living">بلا حدود</span>
+      </h1>
+      <p class="hero-subtitle" data-ar="مرحباً بكم في ريجال بالاس — حيث تلتقي الراحة الاستثنائية بالخدمة الملكية" data-en="Welcome to Regal Palace — where extraordinary comfort meets royal service">مرحباً بكم في ريجال بالاس — حيث تلتقي الراحة الاستثنائية بالخدمة الملكية</p>
+      <div class="hero-buttons">
+        <a href="#booking" class="btn-primary" data-ar="احجز إقامتك الآن" data-en="Book Your Stay Now">احجز إقامتك الآن</a>
+        <a href="#rooms" class="btn-secondary" data-ar="استكشف غرفنا" data-en="Explore Our Rooms">استكشف غرفنا</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="350">0</span>
+          <span class="stat-label" data-ar="غرفة وجناح فاخر" data-en="Luxury Rooms & Suites">غرفة وجناح فاخر</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="15">0</span>
+          <span class="stat-label" data-ar="مطعم وبار" data-en="Restaurants & Bars">مطعم وبار</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="25">0</span>
+          <span class="stat-label" data-ar="سنة من التميز" data-en="Years of Excellence">سنة من التميز</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span data-ar="اسحب للأسفل" data-en="Scroll Down">اسحب للأسفل</span>
+    </div>
+    <div class="slide-controls">
+      <button class="slide-btn prev" id="prevSlide" aria-label="Previous">&#8250;</button>
+      <div class="slide-dots" id="slideDots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      <button class="slide-btn next" id="nextSlide" aria-label="Next">&#8249;</button>
+    </div>
+  </section>
+
+  <!-- Booking Bar -->
+  <section id="booking" class="booking-bar">
+    <div class="booking-container">
+      <h2 class="booking-title" data-ar="احجز إقامتك المثالية" data-en="Book Your Perfect Stay">احجز إقامتك المثالية</h2>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-group">
+          <label for="checkin"><span class="form-icon">📅</span> <span data-ar="تاريخ الوصول" data-en="Check-in Date">تاريخ الوصول</span></label>
+          <input type="date" id="checkin" name="checkin" required />
+        </div>
+        <div class="form-group">
+          <label for="checkout"><span class="form-icon">📅</span> <span data-ar="تاريخ المغادرة" data-en="Check-out Date">تاريخ المغادرة</span></label>
+          <input type="date" id="checkout" name="checkout" required />
+        </div>
+        <div class="form-group">
+          <label for="guests"><span class="form-icon">👤</span> <span data-ar="عدد الضيوف" data-en="Guests">عدد الضيوف</span></label>
+          <select id="guests" name="guests">
+            <option value="1" data-ar="ضيف واحد" data-en="1 Guest">ضيف واحد</option>
+            <option value="2" selected data-ar="ضيفان" data-en="2 Guests">ضيفان</option>
+            <option value="3" data-ar="3 ضيوف" data-en="3 Guests">3 ضيوف</option>
+            <option value="4" data-ar="4 ضيوف" data-en="4 Guests">4 ضيوف</option>
+            <option value="5+" data-ar="5+ ضيوف" data-en="5+ Guests">5+ ضيوف</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="room-type"><span class="form-icon">🏨</span> <span data-ar="نوع الغرفة" data-en="Room Type">نوع الغرفة</span></label>
+          <select id="room-type" name="room-type">
+            <option value="standard" data-ar="غرفة ديلوكس" data-en="Deluxe Room">غرفة ديلوكس</option>
+            <option value="junior" data-ar="جناح جونيور" data-en="Junior Suite">جناح جونيور</option>
+            <option value="suite" data-ar="جناح فاخر" data-en="Luxury Suite">جناح فاخر</option>
+            <option value="presidential" data-ar="الجناح الرئاسي" data-en="Presidential Suite">الجناح الرئاسي</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-check" data-ar="تحقق من التوفر" data-en="Check Availability">تحقق من التوفر</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="welcome-section">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-text">
+          <div class="section-tag" data-ar="✦ أهلاً بكم ✦" data-en="✦ Welcome ✦">✦ أهلاً بكم ✦</div>
+          <h2 class="section-title">
+            <span data-ar="مكان يُعيد تعريف" data-en="A Place That Redefines">مكان يُعيد تعريف</span><br />
+            <span class="gold-text" data-ar="الفخامة الحقيقية" data-en="True Luxury">الفخامة الحقيقية</span>
+          </h2>
+          <p class="welcome-desc" data-ar="في فندق ريجال بالاس، نؤمن بأن كل لحظة تستحق أن تكون استثنائية. منذ عام 2000، نقدم تجربة إقامة تتجاوز التوقعات، حيث يلتقي التصميم المعماري الرائع بالخدمة الشخصية الدافئة والمرافق الاستثنائية." data-en="At Regal Palace Hotel, we believe every moment deserves to be exceptional. Since 2000, we have delivered a stay experience that exceeds expectations, where stunning architecture meets warm personal service and world-class facilities.">في فندق ريجال بالاس، نؤمن بأن كل لحظة تستحق أن تكون استثنائية. منذ عام 2000، نقدم تجربة إقامة تتجاوز التوقعات، حيث يلتقي التصميم المعماري الرائع بالخدمة الشخصية الدافئة والمرافق الاستثنائية.</p>
+          <p class="welcome-desc" data-ar="يقع فندقنا في قلب المدينة، يطل على البحر ويمنحك إطلالة خلابة لا مثيل لها. كل تفصيلة في فندقنا مصممة بعناية لتضمن راحتك ورفاهيتك في كل لحظة." data-en="Our hotel sits at the heart of the city, overlooking the sea and offering a breathtaking view like no other. Every detail of our hotel is crafted with care to ensure your comfort and luxury at every moment.">يقع فندقنا في قلب المدينة، يطل على البحر ويمنحك إطلالة خلابة لا مثيل لها. كل تفصيلة في فندقنا مصممة بعناية لتضمن راحتك ورفاهيتك في كل لحظة.</p>
+          <div class="welcome-features">
+            <div class="feat-item">
+              <span class="feat-icon">🏆</span>
+              <div>
+                <strong data-ar="جوائز عالمية" data-en="Global Awards">جوائز عالمية</strong>
+                <span data-ar="أفضل فندق في المنطقة 2024" data-en="Best Hotel in the Region 2024">أفضل فندق في المنطقة 2024</span>
+              </div>
+            </div>
+            <div class="feat-item">
+              <span class="feat-icon">⭐</span>
+              <div>
+                <strong data-ar="تقييم استثنائي" data-en="Exceptional Rating">تقييم استثنائي</strong>
+                <span data-ar="4.9/5 من آلاف الضيوف" data-en="4.9/5 from Thousands of Guests">4.9/5 من آلاف الضيوف</span>
+              </div>
+            </div>
+            <div class="feat-item">
+              <span class="feat-icon">🌿</span>
+              <div>
+                <strong data-ar="صديق للبيئة" data-en="Eco-Friendly">صديق للبيئة</strong>
+                <span data-ar="شهادة الاستدامة الذهبية" data-en="Gold Sustainability Certificate">شهادة الاستدامة الذهبية</span>
+              </div>
+            </div>
+          </div>
+          <a href="#rooms" class="btn-primary" data-ar="اكتشف المزيد" data-en="Discover More">اكتشف المزيد</a>
+        </div>
+        <div class="welcome-images">
+          <div class="img-main">
+            <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_hero_1784628810981.png" alt="Regal Palace Hotel" />
+          </div>
+          <div class="img-secondary">
+            <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_pool_1784628829939.png" alt="Pool" />
+            <div class="award-badge">
+              <span class="award-year">2024</span>
+              <span class="award-title" data-ar="أفضل فندق" data-en="Best Hotel">أفضل فندق</span>
+              <span class="award-stars">★★★★★</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="rooms-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-ar="✦ غرفنا وأجنحتنا ✦" data-en="✦ Rooms & Suites ✦">✦ غرفنا وأجنحتنا ✦</div>
+        <h2 class="section-title">
+          <span data-ar="استراحة " data-en="The Retreat of ">استراحة </span><span class="gold-text" data-ar="الملوك" data-en="Kings">الملوك</span>
+        </h2>
+        <p class="section-desc" data-ar="كل غرفة قصيدة من الفخامة، صممناها لتكون ملاذك الخاص بعيداً عن صخب العالم" data-en="Every room is a poem of luxury, designed to be your private sanctuary away from the noise of the world">كل غرفة قصيدة من الفخامة، صممناها لتكون ملاذك الخاص بعيداً عن صخب العالم</p>
+      </div>
+      <div class="rooms-grid">
+        <!-- Room 1 -->
+        <div class="room-card">
+          <div class="room-image">
+            <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_room_1784628820545.png" alt="Deluxe Room" />
+            <div class="room-badge" data-ar="الأكثر طلباً" data-en="Most Popular">الأكثر طلباً</div>
+            <div class="room-overlay">
+              <a href="#booking" class="room-book-btn" data-ar="احجز الآن" data-en="Book Now">احجز الآن</a>
+            </div>
+          </div>
+          <div class="room-info">
+            <div class="room-stars">★★★★★</div>
+            <h3 class="room-name" data-ar="غرفة ديلوكس" data-en="Deluxe Room">غرفة ديلوكس</h3>
+            <p class="room-desc" data-ar="أجواء حميمة وإطلالة خلابة، مجهزة بأرقى التقنيات والديكورات الفاخرة" data-en="Intimate atmosphere with stunning views, equipped with premium technology and luxury décor">أجواء حميمة وإطلالة خلابة، مجهزة بأرقى التقنيات والديكورات الفاخرة</p>
+            <div class="room-features">
+              <span data-ar="🛏️ سرير كبير" data-en="🛏️ King Bed">🛏️ سرير كبير</span>
+              <span data-ar="🌊 إطلالة بحرية" data-en="🌊 Sea View">🌊 إطلالة بحرية</span>
+              <span data-ar="📶 واي فاي مجاني" data-en="📶 Free Wi-Fi">📶 واي فاي مجاني</span>
+              <span data-ar="🛁 حوض استحمام" data-en="🛁 Bathtub">🛁 حوض استحمام</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-from" data-ar="يبدأ من" data-en="From">يبدأ من</span>
+                <span class="price-amount">850</span>
+                <span class="price-currency" data-ar="ر.س / ليلة" data-en="SAR / Night">ر.س / ليلة</span>
+              </div>
+              <a href="#booking" class="btn-room-book" data-ar="احجز" data-en="Book">احجز</a>
+            </div>
+          </div>
+        </div>
+        <!-- Room 2 -->
+        <div class="room-card featured">
+          <div class="room-image">
+            <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_suite_1784628863246.png" alt="Royal Suite" />
+            <div class="room-badge featured-badge" data-ar="جناح فاخر" data-en="Luxury Suite">جناح فاخر</div>
+            <div class="room-overlay">
+              <a href="#booking" class="room-book-btn" data-ar="احجز الآن" data-en="Book Now">احجز الآن</a>
+            </div>
+          </div>
+          <div class="room-info">
+            <div class="room-stars">★★★★★</div>
+            <h3 class="room-name" data-ar="الجناح الملكي" data-en="Royal Suite">الجناح الملكي</h3>
+            <p class="room-desc" data-ar="تجربة فريدة في جناح ملكي فسيح مع غرفة جلوس منفصلة وإطلالة 360 درجة" data-en="A unique experience in a spacious royal suite with a separate living room and 360° panoramic views">تجربة فريدة في جناح ملكي فسيح مع غرفة جلوس منفصلة وإطلالة 360 درجة</p>
+            <div class="room-features">
+              <span data-ar="🛏️ غرفتا نوم" data-en="🛏️ 2 Bedrooms">🛏️ غرفتا نوم</span>
+              <span data-ar="🏙️ إطلالة بانورامية" data-en="🏙️ Panoramic View">🏙️ إطلالة بانورامية</span>
+              <span data-ar="🍾 استقبال VIP" data-en="🍾 VIP Welcome">🍾 استقبال VIP</span>
+              <span data-ar="🛁 جاكوزي خاص" data-en="🛁 Private Jacuzzi">🛁 جاكوزي خاص</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-from" data-ar="يبدأ من" data-en="From">يبدأ من</span>
+                <span class="price-amount">2,200</span>
+                <span class="price-currency" data-ar="ر.س / ليلة" data-en="SAR / Night">ر.س / ليلة</span>
+              </div>
+              <a href="#booking" class="btn-room-book" data-ar="احجز" data-en="Book">احجز</a>
+            </div>
+          </div>
+        </div>
+        <!-- Room 3 -->
+        <div class="room-card">
+          <div class="room-image">
+            <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_pool_1784628829939.png" alt="Presidential Suite" />
+            <div class="room-badge gold-badge" data-ar="الجناح الرئاسي" data-en="Presidential">الجناح الرئاسي</div>
+            <div class="room-overlay">
+              <a href="#booking" class="room-book-btn" data-ar="احجز الآن" data-en="Book Now">احجز الآن</a>
+            </div>
+          </div>
+          <div class="room-info">
+            <div class="room-stars">★★★★★</div>
+            <h3 class="room-name" data-ar="الجناح الرئاسي" data-en="Presidential Suite">الجناح الرئاسي</h3>
+            <p class="room-desc" data-ar="قمة الفخامة والرقي، مع مسبح خاص وخدمة باتلر على مدار الساعة" data-en="The pinnacle of luxury and elegance, with a private pool and 24/7 butler service">قمة الفخامة والرقي، مع مسبح خاص وخدمة باتلر على مدار الساعة</p>
+            <div class="room-features">
+              <span data-ar="🏊 مسبح خاص" data-en="🏊 Private Pool">🏊 مسبح خاص</span>
+              <span data-ar="👨‍💼 خدمة باتلر" data-en="👨‍💼 Butler Service">👨‍💼 خدمة باتلر</span>
+              <span data-ar="🚁 مهبط مروحية" data-en="🚁 Helipad">🚁 مهبط مروحية</span>
+              <span data-ar="🍽️ طاهٍ خاص" data-en="🍽️ Private Chef">🍽️ طاهٍ خاص</span>
+            </div>
+            <div class="room-footer">
+              <div class="room-price">
+                <span class="price-from" data-ar="يبدأ من" data-en="From">يبدأ من</span>
+                <span class="price-amount">5,500</span>
+                <span class="price-currency" data-ar="ر.س / ليلة" data-en="SAR / Night">ر.س / ليلة</span>
+              </div>
+              <a href="#booking" class="btn-room-book" data-ar="احجز" data-en="Book">احجز</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Amenities Section -->
+  <section id="amenities" class="amenities-section">
+    <div class="amenities-bg"></div>
+    <div class="container">
+      <div class="section-header light">
+        <div class="section-tag light-tag" data-ar="✦ خدماتنا ✦" data-en="✦ Our Amenities ✦">✦ خدماتنا ✦</div>
+        <h2 class="section-title white-title">
+          <span data-ar="كل ما تحتاجه" data-en="Everything You Need">كل ما تحتاجه</span><br />
+          <span class="gold-text" data-ar="في مكان واحد" data-en="In One Place">في مكان واحد</span>
+        </h2>
+        <p class="section-desc light-desc" data-ar="نقدم لك تجربة متكاملة تشمل كل جوانب الراحة والترفيه والعافية" data-en="We offer you a complete experience covering all aspects of comfort, entertainment, and wellness">نقدم لك تجربة متكاملة تشمل كل جوانب الراحة والترفيه والعافية</p>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-card">
+          <div class="amenity-icon">🏊‍♂️</div>
+          <h3 data-ar="مسابح فاخرة" data-en="Luxury Pools">مسابح فاخرة</h3>
+          <p data-ar="ثلاثة مسابح بما فيها المسبح اللانهائي المطل على الخليج" data-en="Three pools including an infinity pool overlooking the Arabian Gulf">ثلاثة مسابح بما فيها المسبح اللانهائي المطل على الخليج</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">💆‍♀️</div>
+          <h3 data-ar="سبا عالمي" data-en="World-Class Spa">سبا عالمي</h3>
+          <p data-ar="مركز سبا متكامل مع أفضل المعالجات والعلاجات العالمية" data-en="A full-service spa center with the finest international treatments and therapies">مركز سبا متكامل مع أفضل المعالجات والعلاجات العالمية</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">🏋️</div>
+          <h3 data-ar="مركز لياقة" data-en="Fitness Center">مركز لياقة</h3>
+          <p data-ar="صالة رياضية مجهزة بأحدث الأجهزة على مدار 24 ساعة" data-en="A gym equipped with the latest machines, open 24 hours a day">صالة رياضية مجهزة بأحدث الأجهزة على مدار 24 ساعة</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">🍽️</div>
+          <h3 data-ar="مطاعم راقية" data-en="Fine Dining">مطاعم راقية</h3>
+          <p data-ar="15 مطعم وبار يقدمون أشهى المأكولات من حول العالم" data-en="15 restaurants and bars serving the finest cuisine from around the world">15 مطعم وبار يقدمون أشهى المأكولات من حول العالم</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">🎰</div>
+          <h3 data-ar="قاعات مؤتمرات" data-en="Conference Halls">قاعات مؤتمرات</h3>
+          <p data-ar="مرافق اجتماعات وفعاليات بأحدث التقنيات لـ 1000 شخص" data-en="Meeting and event facilities with the latest technology for up to 1,000 guests">مرافق اجتماعات وفعاليات بأحدث التقنيات لـ 1000 شخص</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">🛒</div>
+          <h3 data-ar="مركز تسوق" data-en="Shopping Center">مركز تسوق</h3>
+          <p data-ar="بوتيكات العلامات التجارية الفاخرة في قلب الفندق" data-en="Luxury brand boutiques at the heart of the hotel">بوتيكات العلامات التجارية الفاخرة في قلب الفندق</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">🚗</div>
+          <h3 data-ar="خدمة فاليه" data-en="Valet Parking">خدمة فاليه</h3>
+          <p data-ar="خدمة ركن السيارات المميزة على مدار الساعة طوال الأسبوع" data-en="Premium valet parking service available 24/7 throughout the week">خدمة ركن السيارات المميزة على مدار الساعة طوال الأسبوع</p>
+        </div>
+        <div class="amenity-card">
+          <div class="amenity-icon">✈️</div>
+          <h3 data-ar="خدمة النقل" data-en="Transportation">خدمة النقل</h3>
+          <p data-ar="ليموزين فاخرة للمطار وجميع التنقلات الداخلية والخارجية" data-en="Luxury limousine to the airport and all local and international transfers">ليموزين فاخرة للمطار وجميع التنقلات الداخلية والخارجية</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dining Section -->
+  <section id="dining" class="dining-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-ar="✦ تجربة الطعام ✦" data-en="✦ Dining Experience ✦">✦ تجربة الطعام ✦</div>
+        <h2 class="section-title">
+          <span data-ar="رحلة " data-en="A Journey for ">رحلة </span><span class="gold-text" data-ar="الذواقة" data-en="Connoisseurs">الذواقة</span>
+        </h2>
+        <p class="section-desc" data-ar="مطاعمنا تأخذك في رحلة استثنائية عبر أرقى المأكولات العالمية والعربية الأصيلة" data-en="Our restaurants take you on an extraordinary journey through the finest international and authentic Arabic cuisines">مطاعمنا تأخذك في رحلة استثنائية عبر أرقى المأكولات العالمية والعربية الأصيلة</p>
+      </div>
+      <div class="dining-grid">
+        <div class="dining-featured">
+          <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_restaurant_1784628838537.png" alt="Golden Star Restaurant" />
+          <div class="dining-overlay">
+            <div class="dining-info">
+              <div class="dining-tag" data-ar="⭐ النجمة الميشلان" data-en="⭐ Michelin Star">⭐ النجمة الميشلان</div>
+              <h3 data-ar="مطعم النجم الذهبي" data-en="The Golden Star Restaurant">مطعم النجم الذهبي</h3>
+              <p data-ar="تجربة عشاء لا تُنسى في أجواء رومانسية ساحرة مع أشهى المأكولات الفرنسية الكلاسيكية" data-en="An unforgettable dining experience in a captivating romantic atmosphere with the finest classic French cuisine">تجربة عشاء لا تُنسى في أجواء رومانسية ساحرة مع أشهى المأكولات الفرنسية الكلاسيكية</p>
+              <div class="dining-meta">
+                <span data-ar="🕐 6م - 11م" data-en="🕐 6PM - 11PM">🕐 6م - 11م</span>
+                <span data-ar="👔 حجز إلزامي" data-en="👔 Reservation Required">👔 حجز إلزامي</span>
+              </div>
+              <a href="#booking" class="btn-dining" data-ar="احجز طاولة" data-en="Reserve a Table">احجز طاولة</a>
+            </div>
+          </div>
+        </div>
+        <div class="dining-secondary">
+          <div class="dining-card">
+            <div class="dining-card-icon">🌊</div>
+            <div>
+              <h4 data-ar="مطعم البحر الأزرق" data-en="Blue Ocean Restaurant">مطعم البحر الأزرق</h4>
+              <p data-ar="المأكولات البحرية الطازجة مع إطلالة رائعة على الخليج العربي" data-en="Fresh seafood with a stunning view of the Arabian Gulf">المأكولات البحرية الطازجة مع إطلالة رائعة على الخليج العربي</p>
+              <span class="dining-time" data-ar="🕐 12م - 10م" data-en="🕐 12PM - 10PM">🕐 12م - 10م</span>
+            </div>
+          </div>
+          <div class="dining-card">
+            <div class="dining-card-icon">🌿</div>
+            <div>
+              <h4 data-ar="مطعم الواحة" data-en="Al Wahat Restaurant">مطعم الواحة</h4>
+              <p data-ar="أفضل المأكولات العربية الأصيلة في أجواء شرقية ساحرة وأصيلة" data-en="The finest authentic Arabic cuisine in a captivating and original oriental atmosphere">أفضل المأكولات العربية الأصيلة في أجواء شرقية ساحرة وأصيلة</p>
+              <span class="dining-time" data-ar="🕐 1م - 11م" data-en="🕐 1PM - 11PM">🕐 1م - 11م</span>
+            </div>
+          </div>
+          <div class="dining-card">
+            <div class="dining-card-icon">☕</div>
+            <div>
+              <h4 data-ar="لاونج البلورة" data-en="Crystal Lounge">لاونج البلورة</h4>
+              <p data-ar="قهوة وشاي وكيك على مستوى عالمي في مكان هادئ وأنيق" data-en="World-class coffee, tea, and pastries in a quiet and elegant setting">قهوة وشاي وكيك على مستوى عالمي في مكان هادئ وأنيق</p>
+              <span class="dining-time" data-ar="🕐 8ص - 12م" data-en="🕐 8AM - 12AM">🕐 8ص - 12م</span>
+            </div>
+          </div>
+          <div class="dining-card">
+            <div class="dining-card-icon">🍣</div>
+            <div>
+              <h4 data-ar="مطعم ساكورا" data-en="Sakura Restaurant">مطعم ساكورا</h4>
+              <p data-ar="أفضل سوشي ومأكولات يابانية أصيلة مع طهاة من اليابان" data-en="The finest sushi and authentic Japanese cuisine with chefs from Japan">أفضل سوشي ومأكولات يابانية أصيلة مع طهاة من اليابان</p>
+              <span class="dining-time" data-ar="🕐 12م - 11م" data-en="🕐 12PM - 11PM">🕐 12م - 11م</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Spa Section -->
+  <section class="spa-section">
+    <div class="spa-bg">
+      <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_spa_1784628853879.png" alt="Spa & Wellness" />
+    </div>
+    <div class="spa-overlay"></div>
+    <div class="container">
+      <div class="spa-content">
+        <div class="section-tag light-tag" data-ar="✦ مركز السبا ✦" data-en="✦ Spa & Wellness ✦">✦ مركز السبا ✦</div>
+        <h2 class="spa-title">
+          <span data-ar="ملاذك من" data-en="Your Escape from">ملاذك من</span><br />
+          <span class="gold-text" data-ar="صخب العالم" data-en="The World's Noise">صخب العالم</span>
+        </h2>
+        <p class="spa-desc" data-ar="مركز سبا Regal Wellness يجمع أقدم الفنون العلاجية الشرقية مع أحدث تقنيات العلاج الغربية لتمنحك تجربة تجديد شاملة للجسم والروح والعقل." data-en="Regal Wellness Spa blends the oldest Eastern healing arts with the latest Western therapeutic techniques to offer you a comprehensive renewal experience for body, soul, and mind.">مركز سبا Regal Wellness يجمع أقدم الفنون العلاجية الشرقية مع أحدث تقنيات العلاج الغربية لتمنحك تجربة تجديد شاملة للجسم والروح والعقل.</p>
+        <div class="spa-features">
+          <div class="spa-feat"><span>✓</span> <span data-ar="مساج تايلاندي أصيل" data-en="Authentic Thai Massage">مساج تايلاندي أصيل</span></div>
+          <div class="spa-feat"><span>✓</span> <span data-ar="حمام مغربي فاخر" data-en="Luxury Moroccan Bath">حمام مغربي فاخر</span></div>
+          <div class="spa-feat"><span>✓</span> <span data-ar="علاجات الوجه المتقدمة" data-en="Advanced Facial Treatments">علاجات الوجه المتقدمة</span></div>
+          <div class="spa-feat"><span>✓</span> <span data-ar="غرف بخار وساونا" data-en="Steam Rooms & Sauna">غرف بخار وساونا</span></div>
+          <div class="spa-feat"><span>✓</span> <span data-ar="حوض الهيدروثيرابي" data-en="Hydrotherapy Pool">حوض الهيدروثيرابي</span></div>
+          <div class="spa-feat"><span>✓</span> <span data-ar="جلسات يوغا ومدتيشن" data-en="Yoga & Meditation Sessions">جلسات يوغا ومدتيشن</span></div>
+        </div>
+        <a href="#booking" class="btn-primary" data-ar="احجز جلستك" data-en="Book Your Session">احجز جلستك</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-ar="✦ آراء ضيوفنا ✦" data-en="✦ Guest Reviews ✦">✦ آراء ضيوفنا ✦</div>
+        <h2 class="section-title">
+          <span data-ar="ما يقوله " data-en="What Our ">ما يقوله </span><span class="gold-text" data-ar="ضيوفنا" data-en="Guests Say">ضيوفنا</span>
+        </h2>
+      </div>
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonial-track" id="testimonialTrack">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-ar='"فندق ريجال بالاس تجربة لن أنساها في حياتي. من لحظة الوصول حتى المغادرة كل شيء كان مثالياً. الخدمة استثنائية والغرف تفوق التوقعات!"' data-en='"Regal Palace Hotel is an experience I will never forget. From the moment of arrival to departure, everything was perfect. The service is exceptional and the rooms exceed expectations!"'>"فندق ريجال بالاس تجربة لن أنساها في حياتي. من لحظة الوصول حتى المغادرة كل شيء كان مثالياً. الخدمة استثنائية والغرف تفوق التوقعات!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">M.A</div>
+              <div class="author-info">
+                <strong>Mohammed Al-Omari</strong>
+                <span data-ar="دبي، الإمارات" data-en="Dubai, UAE">دبي، الإمارات</span>
+              </div>
+              <div class="testimonial-platform">Google ⭐ 5.0</div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-ar='"قضيت عطلة عيد ميلاد زوجتي في ريجال بالاس وكانت ليلة لا تُنسى. الجناح الملكي أبهرنا بكل تفاصيله والموظفون كانوا يقرأون توقعاتنا قبل أن نطلب!"' data-en='"I spent my wife\'s birthday at Regal Palace and it was an unforgettable night. The Royal Suite amazed us with every detail, and the staff anticipated our every need before we asked!"'>"قضيت عطلة عيد ميلاد زوجتي في ريجال بالاس وكانت ليلة لا تُنسى. الجناح الملكي أبهرنا بكل تفاصيله والموظفون كانوا يقرأون توقعاتنا قبل أن نطلب!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">F.S</div>
+              <div class="author-info">
+                <strong>Faisal Al-Saeed</strong>
+                <span data-ar="الرياض، السعودية" data-en="Riyadh, Saudi Arabia">الرياض، السعودية</span>
+              </div>
+              <div class="testimonial-platform">TripAdvisor ⭐ 5.0</div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-ar='"أفضل فندق جربته في حياتي دون منازع! المسبح اللانهائي والمطعم الفرنسي كانا تحفة فنية. سأعود حتماً مع عائلتي للعطلة القادمة."' data-en='"Undoubtedly the best hotel I have ever experienced! The infinity pool and French restaurant were masterpieces. I will definitely return with my family for the next vacation."'>"أفضل فندق جربته في حياتي دون منازع! المسبح اللانهائي والمطعم الفرنسي كانا تحفة فنية. سأعود حتماً مع عائلتي للعطلة القادمة."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">N.Q</div>
+              <div class="author-info">
+                <strong>Noura Al-Qahtani</strong>
+                <span data-ar="الكويت" data-en="Kuwait">الكويت</span>
+              </div>
+              <div class="testimonial-platform">Booking.com ⭐ 5.0</div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">★★★★★</div>
+            <p class="testimonial-text" data-ar='"أقمت هنا لمدة أسبوع كاملة لأغراض العمل والاسترخاء معاً. مرافق الاجتماعات عالمية المستوى والسبا منحني الطاقة كل يوم."' data-en='"I stayed here for a full week for both business and relaxation. The meeting facilities are world-class and the spa gave me energy every single day."'>"أقمت هنا لمدة أسبوع كاملة لأغراض العمل والاسترخاء معاً. مرافق الاجتماعات عالمية المستوى والسبا منحني الطاقة كل يوم."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">A.M</div>
+              <div class="author-info">
+                <strong>Abdullah Al-Mansour</strong>
+                <span data-ar="قطر" data-en="Qatar">قطر</span>
+              </div>
+              <div class="testimonial-platform">Google ⭐ 5.0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <button class="t-btn" id="tPrev">&#8250;</button>
+        <button class="t-btn" id="tNext">&#8249;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="gallery-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-ar="✦ معرض الصور ✦" data-en="✦ Photo Gallery ✦">✦ معرض الصور ✦</div>
+        <h2 class="section-title">
+          <span data-ar="لقطات من " data-en="Glimpses of ">لقطات من </span><span class="gold-text" data-ar="جنة الفخامة" data-en="Paradise">جنة الفخامة</span>
+        </h2>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item large">
+          <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_hero_1784628810981.png" alt="Hotel Exterior" />
+          <div class="gallery-caption" data-ar="واجهة الفندق الشهيرة" data-en="The Iconic Hotel Facade">واجهة الفندق الشهيرة</div>
+        </div>
+        <div class="gallery-item">
+          <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_room_1784628820545.png" alt="Deluxe Room" />
+          <div class="gallery-caption" data-ar="غرفة ديلوكس" data-en="Deluxe Room">غرفة ديلوكس</div>
+        </div>
+        <div class="gallery-item">
+          <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_pool_1784628829939.png" alt="Infinity Pool" />
+          <div class="gallery-caption" data-ar="المسبح اللانهائي" data-en="Infinity Pool">المسبح اللانهائي</div>
+        </div>
+        <div class="gallery-item">
+          <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_restaurant_1784628838537.png" alt="Fine Dining" />
+          <div class="gallery-caption" data-ar="مطعم النجم الذهبي" data-en="The Golden Star Restaurant">مطعم النجم الذهبي</div>
+        </div>
+        <div class="gallery-item large">
+          <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_spa_1784628853879.png" alt="Spa & Wellness" />
+          <div class="gallery-caption" data-ar="مركز سبا ريجال ويلنس" data-en="Regal Wellness Spa Center">مركز سبا ريجال ويلنس</div>
+        </div>
+        <div class="gallery-item">
+          <img src="C:/Users/POWER/.gemini/antigravity/brain/8355bd25-e6f8-44fa-b270-842246a163d1/hotel_suite_1784628863246.png" alt="Presidential Suite" />
+          <div class="gallery-caption" data-ar="الجناح الرئاسي" data-en="Presidential Suite">الجناح الرئاسي</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="offers-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag" data-ar="✦ عروضنا ✦" data-en="✦ Special Offers ✦">✦ عروضنا ✦</div>
+        <h2 class="section-title">
+          <span data-ar="عروض " data-en="Deals You ">عروض </span><span class="gold-text" data-ar="لا تُفوَّت" data-en="Can't Miss">لا تُفوَّت</span>
+        </h2>
+      </div>
+      <div class="offers-grid">
+        <div class="offer-card">
+          <div class="offer-badge" data-ar="خصم 30%" data-en="30% Off">خصم 30%</div>
+          <div class="offer-icon">🌅</div>
+          <h3 data-ar="باقة شهر العسل" data-en="Honeymoon Package">باقة شهر العسل</h3>
+          <p data-ar="3 ليالٍ في الجناح الملكي مع إفطار وعشاء رومانسي على الشاطئ وجلسة سبا للزوجين" data-en="3 nights in the Royal Suite with breakfast, a romantic beach dinner, and a couples' spa session">3 ليالٍ في الجناح الملكي مع إفطار وعشاء رومانسي على الشاطئ وجلسة سبا للزوجين</p>
+          <div class="offer-price">
+            <span class="offer-old">6,600</span>
+            <span class="offer-new">4,620 <small data-ar="ر.س" data-en="SAR">ر.س</small></span>
+          </div>
+          <a href="#booking" class="btn-offer" data-ar="احجز الباقة" data-en="Book Package">احجز الباقة</a>
+        </div>
+        <div class="offer-card featured-offer">
+          <div class="offer-badge gold" data-ar="الأكثر شعبية" data-en="Most Popular">الأكثر شعبية</div>
+          <div class="offer-icon">👨‍👩‍👧‍👦</div>
+          <h3 data-ar="باقة العائلة السعيدة" data-en="Happy Family Package">باقة العائلة السعيدة</h3>
+          <p data-ar="5 ليالٍ مع وجبات ثلاث وأنشطة ترفيهية للأطفال ومدربين خاصين على مدار اليوم" data-en="5 nights with three meals, children's entertainment activities, and private coaches throughout the day">5 ليالٍ مع وجبات ثلاث وأنشطة ترفيهية للأطفال ومدربين خاصين على مدار اليوم</p>
+          <div class="offer-price">
+            <span class="offer-old">12,000</span>
+            <span class="offer-new">8,500 <small data-ar="ر.س" data-en="SAR">ر.س</small></span>
+          </div>
+          <a href="#booking" class="btn-offer" data-ar="احجز الباقة" data-en="Book Package">احجز الباقة</a>
+        </div>
+        <div class="offer-card">
+          <div class="offer-badge">VIP</div>
+          <div class="offer-icon">💼</div>
+          <h3 data-ar="باقة رجل الأعمال" data-en="Business Package">باقة رجل الأعمال</h3>
+          <p data-ar="إقامة أسبوعية شاملة مع مكتب خاص وسكرتارية وخدمة نقل VIP على مدار الساعة" data-en="A full week's stay with a private office, secretarial services, and 24/7 VIP transportation">إقامة أسبوعية شاملة مع مكتب خاص وسكرتارية وخدمة نقل VIP على مدار الساعة</p>
+          <div class="offer-price">
+            <span class="offer-old">18,000</span>
+            <span class="offer-new">14,200 <small data-ar="ر.س" data-en="SAR">ر.س</small></span>
+          </div>
+          <a href="#booking" class="btn-offer" data-ar="احجز الباقة" data-en="Book Package">احجز الباقة</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-tag" data-ar="✦ تواصل معنا ✦" data-en="✦ Contact Us ✦">✦ تواصل معنا ✦</div>
+          <h2 class="section-title">
+            <span data-ar="نحن هنا" data-en="We Are Here">نحن هنا</span><br />
+            <span class="gold-text" data-ar="لخدمتك دائماً" data-en="Always at Your Service">لخدمتك دائماً</span>
+          </h2>
+          <p data-ar="فريق خدمة ضيوفنا متاح على مدار الساعة طوال أيام الأسبوع للإجابة على استفساراتكم وتلبية طلباتكم." data-en="Our guest services team is available around the clock, every day of the week, to answer your inquiries and fulfill your requests.">فريق خدمة ضيوفنا متاح على مدار الساعة طوال أيام الأسبوع للإجابة على استفساراتكم وتلبية طلباتكم.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong data-ar="العنوان" data-en="Address">العنوان</strong>
+                <span data-ar="شارع الكورنيش الذهبي، المنطقة الفاخرة، الرياض" data-en="Golden Corniche Street, Luxury District, Riyadh, Saudi Arabia">شارع الكورنيش الذهبي، المنطقة الفاخرة، الرياض</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong data-ar="الهاتف" data-en="Phone">الهاتف</strong>
+                <span>800-REGAL-01 (800-73425-01)</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <strong data-ar="البريد الإلكتروني" data-en="Email">البريد الإلكتروني</strong>
+                <span>reservations@regalpalace.com</span>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">🕐</span>
+              <div>
+                <strong data-ar="الاستقبال" data-en="Reception">الاستقبال</strong>
+                <span data-ar="24 ساعة / 7 أيام / 365 يوم" data-en="24 Hours / 7 Days / 365 Days">24 ساعة / 7 أيام / 365 يوم</span>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+            <a href="#" class="social-btn" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap">
+          <form class="contact-form" id="contactForm">
+            <h3 data-ar="أرسل لنا رسالة" data-en="Send Us a Message">أرسل لنا رسالة</h3>
+            <div class="form-row">
+              <div class="input-group">
+                <input type="text" id="fname" placeholder=" " required />
+                <label for="fname" data-ar="الاسم الكامل" data-en="Full Name">الاسم الكامل</label>
+              </div>
+              <div class="input-group">
+                <input type="email" id="femail" placeholder=" " required />
+                <label for="femail" data-ar="البريد الإلكتروني" data-en="Email Address">البريد الإلكتروني</label>
+              </div>
+            </div>
+            <div class="input-group">
+              <input type="tel" id="fphone" placeholder=" " />
+              <label for="fphone" data-ar="رقم الهاتف" data-en="Phone Number">رقم الهاتف</label>
+            </div>
+            <div class="input-group">
+              <select id="fsubject">
+                <option value="" data-ar="اختر موضوع الرسالة" data-en="Select a Subject">اختر موضوع الرسالة</option>
+                <option value="reservation" data-ar="استفسار عن الحجز" data-en="Reservation Inquiry">استفسار عن الحجز</option>
+                <option value="event" data-ar="تنظيم فعالية" data-en="Event Planning">تنظيم فعالية</option>
+                <option value="complaint" data-ar="شكوى أو اقتراح" data-en="Complaint or Suggestion">شكوى أو اقتراح</option>
+                <option value="other" data-ar="أخرى" data-en="Other">أخرى</option>
+              </select>
+              <label for="fsubject"></label>
+            </div>
+            <div class="input-group">
+              <textarea id="fmessage" rows="4" placeholder=" " required></textarea>
+              <label for="fmessage" data-ar="رسالتك" data-en="Your Message">رسالتك</label>
+            </div>
+            <button type="submit" class="btn-primary full-width" data-ar="إرسال الرسالة ✦" data-en="Send Message ✦">إرسال الرسالة ✦</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <span class="logo-star">✦</span>
+              <span>REGAL PALACE</span>
+            </div>
+            <p class="footer-desc" data-ar="وجهة الفخامة الأولى في المملكة العربية السعودية والخليج العربي. نقدم تجربة إقامة استثنائية تجمع بين الأصالة والحداثة." data-en="The premier luxury destination in Saudi Arabia and the Arabian Gulf. We offer an extraordinary stay experience that combines authenticity and modernity.">وجهة الفخامة الأولى في المملكة العربية السعودية والخليج العربي. نقدم تجربة إقامة استثنائية تجمع بين الأصالة والحداثة.</p>
+            <div class="footer-awards">
+              <span class="award-chip" data-ar="🏆 أفضل فندق 2024" data-en="🏆 Best Hotel 2024">🏆 أفضل فندق 2024</span>
+              <span class="award-chip" data-ar="⭐ 5 نجوم" data-en="⭐ 5 Stars">⭐ 5 نجوم</span>
+              <span class="award-chip" data-ar="🌿 معتمد بيئياً" data-en="🌿 Eco Certified">🌿 معتمد بيئياً</span>
+            </div>
+          </div>
+          <div class="footer-links">
+            <h4 data-ar="روابط سريعة" data-en="Quick Links">روابط سريعة</h4>
+            <ul>
+              <li><a href="#home" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+              <li><a href="#rooms" data-ar="الغرف والأجنحة" data-en="Rooms & Suites">الغرف والأجنحة</a></li>
+              <li><a href="#amenities" data-ar="خدماتنا" data-en="Amenities">خدماتنا</a></li>
+              <li><a href="#dining" data-ar="المطاعم" data-en="Dining">المطاعم</a></li>
+              <li><a href="#gallery" data-ar="معرض الصور" data-en="Photo Gallery">معرض الصور</a></li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h4 data-ar="خدماتنا" data-en="Services">خدماتنا</h4>
+            <ul>
+              <li><a href="#" data-ar="مركز المؤتمرات" data-en="Conference Center">مركز المؤتمرات</a></li>
+              <li><a href="#" data-ar="السبا والعافية" data-en="Spa & Wellness">السبا والعافية</a></li>
+              <li><a href="#" data-ar="الزفاف والمناسبات" data-en="Weddings & Events">الزفاف والمناسبات</a></li>
+              <li><a href="#" data-ar="خدمة الأعمال" data-en="Business Services">خدمة الأعمال</a></li>
+              <li><a href="#" data-ar="نادي VIP" data-en="VIP Club">نادي VIP</a></li>
+            </ul>
+          </div>
+          <div class="footer-newsletter">
+            <h4 data-ar="اشترك في نشرتنا" data-en="Subscribe to Newsletter">اشترك في نشرتنا</h4>
+            <p data-ar="احصل على أحدث العروض والباقات الحصرية مباشرة في بريدك الإلكتروني" data-en="Get the latest exclusive offers and packages delivered directly to your inbox">احصل على أحدث العروض والباقات الحصرية مباشرة في بريدك الإلكتروني</p>
+            <form class="newsletter-form" id="newsletterForm">
+              <input type="email" placeholder="Email / البريد الإلكتروني" required />
+              <button type="submit">✦</button>
+            </form>
+            <div class="footer-contact-mini">
+              <span>📞 800-73425-01</span>
+              <span>📧 info@regalpalace.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p data-ar="© 2025 فندق ريجال بالاس. جميع الحقوق محفوظة." data-en="© 2025 Regal Palace Hotel. All Rights Reserved.">© 2025 فندق ريجال بالاس. جميع الحقوق محفوظة.</p>
+        <div class="footer-legal">
+          <a href="#" data-ar="سياسة الخصوصية" data-en="Privacy Policy">سياسة الخصوصية</a>
+          <a href="#" data-ar="الشروط والأحكام" data-en="Terms & Conditions">الشروط والأحكام</a>
+          <a href="#" data-ar="سياسة الإلغاء" data-en="Cancellation Policy">سياسة الإلغاء</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to Top">↑</button>
+
+  <!-- Success Modal -->
+  <div id="successModal" class="modal-overlay">
+    <div class="modal-box">
+      <div class="modal-icon">✦</div>
+      <h3 data-ar="شكراً لك!" data-en="Thank You!">شكراً لك!</h3>
+      <p data-ar="تم استلام طلبك بنجاح. سيتواصل معك فريقنا في أقرب وقت ممكن." data-en="Your request has been received successfully. Our team will contact you as soon as possible.">تم استلام طلبك بنجاح. سيتواصل معك فريقنا في أقرب وقت ممكن.</p>
+      <button onclick="closeModal()" class="btn-primary" data-ar="حسناً" data-en="OK">حسناً</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
